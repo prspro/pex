@@ -3,6 +3,7 @@
 	color: white
 	font-size: 40px
 	font-family: $OpenSans
+	overflow: hidden
 	.logo
 		display: inline-block
 		margin-top: 42px
@@ -17,12 +18,14 @@
 			display: inline-block
 			+sprite($logo2)
 	.row
+		margin-bottom: 277px
 		&::after
 			content: ""
 			position: absolute
 			width: 1600px
 			height: 1px
-			background-color: red
+			background-color: #b87ce1
+			opacity: .2
 			left: 50%
 			transform: translateX(-50%)
 		.nav-bar
@@ -48,11 +51,12 @@
 						margin-left: auto
 						margin-right: auto
 						content: ""
-						width: 34px
+						//width: 34px
+						width: 100%
 						height: 3px
 						background-color: #fff
 						opacity: 0 
-						transition: opacity .5s
+						transition: opacity .8s
 					&:hover
 						&::after
 							opacity: 1
@@ -85,3 +89,30 @@
 					right: 13px
 					top: 50%
 					transform: translateY(-50%)
+	.big-text
+		font-size: 50px
+		max-width: 505px
+		line-height: 1.4
+		text-align: right	
+		margin-bottom: 50px
+	.button-box
+		display: inline-block
+		margin-left: 225px
+		margin-bottom: 253px
+		.start-btn
+			display: inline-block
+			background-color: $pseudoVelvetBG
+			width: 280px
+			font-size: 17px
+			line-height: 60px
+			font-family: $OpenSansBold
+			padding: 0 60px
+			text-decoration: none
+			color: white
+			border-radius: 30px
+			box-shadow: 0 -1px 2px 1px #b87ce1, 0 1px 1px 1px black
+			margin-bottom: 19px
+		.lil-text
+			display: block
+			font-size: 12px
+			text-align: center
