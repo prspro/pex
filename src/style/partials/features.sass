@@ -1,0 +1,32 @@
+.features
+	background-color: $greyBlueBG
+	padding: 78px 0 140px 0
+	color: white
+	font-family: $OpenSans
+	position: relative
+	margin-bottom: 100px
+	.cols
+		display: flex
+		justify-content: center
+		&__item
+			margin: 0 10px
+			max-width: 400px
+			.big-text
+					font-family: $OpenSansBold
+					text-transform: uppercase
+					margin-bottom: 35px
+			.lil-text
+					margin-bottom: 68px
+					line-height: 1.8
+					&:last-of-type
+						margin-bottom: 0
+	.bell-shaped
+		display: inline-block
+		position: absolute
+		bottom: -35px
+		left: 50%
+		transform: translateX(-50%)
+		+sprite($shape2)
+		//height: 100px
+		//width: 100px
+		//background-color: #5ddaaa
